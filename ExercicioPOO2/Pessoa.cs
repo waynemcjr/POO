@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExercicioPOO
+namespace ExercicioPOO2
 {
     internal class Pessoa
     {
@@ -13,7 +13,7 @@ namespace ExercicioPOO
         public string Sobrenome;
         public string Sexo;
         public double Altura;
-        public Endereco Endereco { get; set; }
+        public Endereco Endereco {get; set;}
 
         public void setIdade(int Idade)
         {
@@ -77,7 +77,6 @@ namespace ExercicioPOO
             //Console.WriteLine(this.Sobrenome);
             Console.WriteLine($"Sexo: {this.Sexo}");
             Console.WriteLine($"Altura: {this.Altura}");
-            this.Endereco.ExibirPessoa();
         }
     }
 }

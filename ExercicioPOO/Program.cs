@@ -1,7 +1,7 @@
 ﻿
 using ExercicioPOO;
 
-Pessoa[] pessoas = new Pessoa[3];
+//Pessoa[] pessoas = new Pessoa[3];
 
 //Pessoa pessoa1 = new Pessoa();
 
@@ -33,34 +33,50 @@ Pessoa[] pessoas = new Pessoa[3];
 
 //pessoa1.ExibirPessoa();
 
-for (int i = 0; i < pessoas.Length; i++)
-{
+//-------------------------------------------------------------
 
-    if (i > 0) { Console.WriteLine(); }
+//for (int i = 0; i < pessoas.Length; i++)
+//{
 
-    pessoas[i] = new Pessoa();
+//    if (i > 0) { Console.WriteLine(); }
 
-    Console.Write($"Informe o nome da {i + 1}° pessoa: ");
-    pessoas[i].setNome(Console.ReadLine()!);
+//    pessoas[i] = new Pessoa();
 
-    Console.Write($"Informe o sobrenome da {i + 1}° pessoa: ");
-    pessoas[i].setSobrenome(Console.ReadLine()!);
+//    Console.Write($"Informe o nome da {i + 1}° pessoa: ");
+//    pessoas[i].setNome(Console.ReadLine()!);
 
-    Console.Write($"Informe o idade da {i + 1}° pessoa: ");
-    pessoas[i].setIdade(Convert.ToInt32(Console.ReadLine()));
+//    Console.Write($"Informe o sobrenome da {i + 1}° pessoa: ");
+//    pessoas[i].setSobrenome(Console.ReadLine()!);
 
-    Console.Write($"Informe o sexo da {i + 1}° pessoa: ");
-    pessoas[i].setSexo(Console.ReadLine()!);
+//    Console.Write($"Informe o idade da {i + 1}° pessoa: ");
+//    pessoas[i].setIdade(Convert.ToInt32(Console.ReadLine()));
 
-    Console.Write($"Informe o altura da {i + 1}° pessoa: ");
-    pessoas[i].setAltura(Convert.ToDouble(Console.ReadLine()));
+//    Console.Write($"Informe o sexo da {i + 1}° pessoa: ");
+//    pessoas[i].setSexo(Console.ReadLine()!);
 
-}
+//    Console.Write($"Informe o altura da {i + 1}° pessoa: ");
+//    pessoas[i].setAltura(Convert.ToDouble(Console.ReadLine()));
 
-Console.WriteLine();
+//}
 
-for (int i = 0; i < pessoas.Length; i++)
-{
-    pessoas[i].ExibirPessoa();
-    Console.WriteLine();
-}
+//Console.WriteLine();
+
+//for (int i = 0; i < pessoas.Length; i++)
+//{
+//    pessoas[i].ExibirPessoa();
+//    Console.WriteLine();
+//}
+
+//---------------------------------------------------------------------
+
+Pessoa pessoa =  new Pessoa();
+
+pessoa.setNome("João");
+pessoa.setSobrenome("Silva");
+pessoa.setAltura(1.87);
+pessoa.setSexo("M");
+pessoa.setIdade(30);
+
+pessoa.Endereco = new Endereco(517, "R duzentos", "Vilinha", "14930-176", "bloco A", "Araraquara", "SP", "Brasil");
+
+pessoa.ExibirPessoa();
