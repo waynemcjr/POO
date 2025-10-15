@@ -12,5 +12,7 @@ namespace ExercicioPOO3
         {
             Console.WriteLine("Rarw!");
         }
+
+        public Leao(string nome, int idade) : base(nome, idade) { }
     }
 }

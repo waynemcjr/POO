@@ -13,5 +13,7 @@ namespace ExercicioPOO3
             Console.WriteLine("Miau!");
         }
 
+        public Gato(string nome, int idade) : base(nome, idade) { }
+
     }
 }

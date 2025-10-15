@@ -16,6 +16,11 @@ namespace ExercicioPOO3
             Console.WriteLine("Som");
         }
 
+        public override string ToString()
+        {
+            return $"Nome: {this.Nome}\nIdade: {this.Idade}";
+        }
+
         public void setNome(string Nome)
         {
             this.Nome = Nome;
@@ -34,6 +39,12 @@ namespace ExercicioPOO3
         public int getIdade()
         {
             return this.Idade;
+        }
+
+        public Animal(string Nome, int Idade)
+        {
+            this.Nome = Nome;
+            this.Idade = Idade;
         }
     }
 }
